@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+     
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(public/images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        
+        .container{
+            width: 40%;
+            padding: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.462);
+            color: white;
+            
+        }
+        .container h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+           -webkit-appearance: none;
+            margin: 0;
+        }
+
+/* Firefox */
+        input[type=number] {
+           -moz-appearance: textfield;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        input{
+            width: 90%;
+            padding: 9px;
+            border-radius: 4px;
+            border: 1px solid black;
+            margin-bottom: 14px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .credit-card{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: wheat;
+            padding: 7px;
+            color: black;
+            margin: 10px 0px 5px 0px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        #btn1{
+            padding: 10px;
+            width: 120px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: rgb(0, 140, 255);
+        }
+
+
+        @media (max-width: 700px) {
+            body{
+        
+        align-items: start;
+        }
+        .container{
+            width: 80%;
+            margin-top: 30px;
+        }
+    }
+        
+        
+    </style>
+</head>
+<body>
+   
+ <div class="container">
+            <h2>Enter Your Address</h2>
+            <form action="">
+                <label for="name">Full-Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your FullName">
+                <label for="number">Phone-no</label>
+                <input type="number" name="number" id="number" placeholder="Enter Your Mobile No">
+                <label for="fullAddress">Full Address</label>
+                <input type="text" id="fullAddress" name="fullAddress" placeholder="Enter Your Full Address">
+                <label for="landmarks">Land-Marks</label>
+                <input type="text" name="landmarks" id="landmarks" placeholder="Enter any Famous LandMarks">
+            </form>
+              <h2>Chose Payment Method</h2>
+            <div class="card">
+                <div class="credit-card">
+                   <p>Credit-Card</p>
+                   <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="credit-card">
+                   <p>Debit-Card</p>
+                   <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="credit-card">
+                   <p>Upi</p>
+                   
+                </div>
+                <div class="credit-card">
+                   <p>Cash on On Delivery</p>
+                   
+                </div>
+                <button id="btn1" type="submit">Submit</button>  
+            </div>
+    </div>
+      
+
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
